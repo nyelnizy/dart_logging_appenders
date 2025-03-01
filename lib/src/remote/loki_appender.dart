@@ -70,7 +70,7 @@ class LokiApiAppender extends BaseDioLogSender {
     });
     return _client
         .post<dynamic>(
-          'https://$server/api/prom/push',
+          '$server',
           cancelToken: cancelToken,
           data: jsonBody,
           options: Options(
